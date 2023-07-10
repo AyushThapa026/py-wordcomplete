@@ -4,7 +4,7 @@ class MyFrame(wx.Frame):
     def __init__(self):
         super().__init__(parent=None, title='Word Autocomplete')
         panel = wx.Panel(self)
-        file = open('popular.txt', 'r')
+        file = open('words_alpha.txt', 'r')
         
         self.word_list = [s for s in file]
         self.valid_words = []
